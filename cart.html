@@ -1,12 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+
+  <!-- MUST be this path -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body onload="loadCart()">
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 
-<h2 style="text-align:center">Your Cart</h2>
+  <div class="cart-container">
 
-<div id="cartItems"></div>
-<h3 style="text-align:center">Total: <span id="total"></span></h3>
+    <h2 class="cart-title">🛒 Your Cart</h2>
 
-<div style="text-align:center">
-  <a href="checkout.html" class="btn">Checkout</a>
-</div>
+    <div id="cartItems"></div>
+
+    <h3 class="cart-total">
+      Total: <span id="total"></span>
+    </h3>
+
+  <button class="btn checkout-btn" onclick="goCheckout()">
+  Proceed to Checkout
+</button>
+
+
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

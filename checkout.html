@@ -1,13 +1,39 @@
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
 
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-<h2>Checkout</h2>
+    <head>
+        <meta charset="UTF-8">
 
-<input name="name" placeholder="Full Name" required>
-<input name="address" placeholder="Address" required>
-<input name="phone" placeholder="Phone">
+        <!-- VERY IMPORTANT FOR MOBILE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<textarea name="order" placeholder="Order details"></textarea>
+        <title>Checkout</title>
 
-<button class="btn">Submit Order</button>
-</form>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="loadCheckout()">
+
+        <form action="https://formspree.io/f/xdkobwqa" method="POST">
+
+            <input type="hidden" name="_redirect" value="thankyou.html">
+
+            <h2>Checkout</h2>
+
+            <input name="name" placeholder="Full Name" required>
+            <input name="phone" placeholder="Phone" required>
+            <input name="address" placeholder="Address" required>
+
+            <!-- Auto-filled order summary -->
+            <textarea id="orderBox" name="Order Details" readonly></textarea>
+
+            <button class="btn">Submit Order</button>
+
+        </form>
+
+        <!-- JS must be last -->
+        <script src="script.js"></script>
+
+    </body>
+</html>

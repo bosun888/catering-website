@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
@@ -17,19 +18,58 @@
 
 <h2 style="text-align:center;margin:20px;">Our Snacks & Cakes</h2>
 
-<div class="grid">
-  <div class="card">
-    <img src="images/cake.jpg">
-    <h3>Chocolate Cake</h3>
-    <button class="btn" onclick="addToCart('Cake',4000)">Add to Cart</button>
-  </div>
+<div class="container">
+  <div class="grid">
+    <div class="card">
+      <img src="images/cakes.jpg">
+      <h3>Cakes</h3>
+      <button onclick="addToCart('Cakes', 4000, 'images/cakes.jpg')" class="button">Add</button>
+    </div>
 
-  <div class="card">
-    <img src="images/snack.jpg">
-    <h3>Meat Pie</h3>
-    <button class="btn" onclick="addToCart('Meat Pie',800)">Add</button>
+    <div class="card">
+      <img src="images/meat-pie.jpg">
+      <h3>Meat Pie</h3>
+      <button onclick="addToCart('Meat Pie', 800, 'images/meat-pie.jpg')" class="button">Add</button>
+    </div>
   </div>
 </div>
+
+<div class="container">
+  <div class="grid">
+    <div class="card">
+      <img src="images/fishpie.jpg">
+      <h3>Fish Pie</h3>
+      <button onclick="addToCart('Fish Pie', 1200, 'images/fishpie.jpg')" class="button">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="images/puff-puff.jpg">
+      <h3>Puff Puff</h3>
+      <button onclick="addToCart('Puff Puff', 800, 'images/puff-puff.jpg')" class="button">Add</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="grid">
+    <div class="card">
+      <img src="images/small-chops.jpg">
+      <h3>Small Chops</h3>
+      <button onclick="addToCart('Small Chops', 4000, 'images/small-chops.jpg')" class="button">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="images/doughnut.jpg">
+      <h3>Doughnuts</h3>
+      <button onclick="addToCart('Doughnuts', 800, 'images/doughnut.jpg')" class="button">Add</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
