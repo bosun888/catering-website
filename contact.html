@@ -1,15 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Cake Factory Lagos</title>
 <link rel="stylesheet" href="style.css">
 
+<style>
+/* ================= BODY ================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* ================= FORM CONTAINER ================= */
+form {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* ================= HEADING ================= */
+form h2 {
+  margin-bottom: 30px;
+  color: #ff6b6b;
+  font-size: 2em;
+}
+
+/* ================= INPUTS & TEXTAREA ================= */
+form input, form textarea {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: border 0.3s, box-shadow 0.3s;
+  resize: none;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 8px rgba(255,107,107,0.4);
+  outline: none;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  width: 95%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #ff3b3b;
+  transform: scale(1.05);
+}
+
+/* ================= WHATSAPP BUTTON ================= */
+.whatsapp-btn {
+  display: inline-block;
+  width: 200px;
+  margin-top: 20px;
+  background: #25D366;
+  text-align: center;
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+  background: #1ebe57;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:480px){
+  form {
+    padding: 30px 20px;
+  }
+
+  form h2 {
+    font-size: 1.6em;
+  }
+
+  form input, form textarea, .btn {
+    width: 100%;
+    font-size: 0.95em;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+</head>
+<body>
+
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-<h2>Contact Us</h2>
-
-<input name="name" placeholder="Name">
-<input name="email" placeholder="Email">
-<textarea name="message" placeholder="Message"></textarea>
-
-<button class="btn">Send Message</button>
+  <h2>Contact Us</h2>
+  <input name="name" placeholder="Name" required>
+  <input name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" required></textarea>
+  <button class="btn" type="submit">Send Message</button>
 </form>
 
-<div style="text-align:center;margin-top:20px">
-<a class="btn" href="https://wa.me/234XXXXXXXXXX">WhatsApp Me</a>
+<div style="text-align:center;">
+  <a class="whatsapp-btn" href="https://wa.me/234XXXXXXXXXX" target="_blank">WhatsApp Me</a>
 </div>
+
+</body>
+</html>
