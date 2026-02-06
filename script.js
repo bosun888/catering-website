@@ -165,3 +165,20 @@ function goCheckout() {
 
   window.location.href = "checkout.html";
 }
+
+
+// CONTACT MESSAGE HAS BEEN SENT USING SWEETALERT2
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  sendMessage();
+});
+
+function sendMessage() {  
+  Swal.fire({
+    title: 'Message Sent!',
+    text: 'Thank you for contacting us. We will get back to you shortly.',
+    icon: 'success',
+    confirmButtonColor: '#3085d6',
+    confirmButtonText: 'OK'
+  });
+}

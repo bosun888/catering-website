@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<nav>
+  <h2>Catering</h2>
+  <div>
+    <a href="services.html">Services</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+    <a href="cakes.html">Cakes</a>
+  </div>
+</nav>
+
+<h2 style="text-align:center;margin:20px;">Our Snacks & Cakes</h2>
+
+<div class="container">
+  <div class="grid">
+    <div class="card">
+      <img src="images/cakes.jpg">
+      <h3>Cakes</h3>
+      <button onclick="addToCart('Cakes', 8000, 'images/cakes.jpg')" class="button">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="images/Saved Pictures/meat-pie2.jpeg">
+      <h3>Meat Pie</h3>
+      <button onclick="addToCart('Meat Pie', 600, 'images/Saved Pictures/meat-pie2.jpeg')" class="button">Add</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid">
+    <div class="card">
+      <img src="images/fishpie.jpg">
+      <h3>Fish Pie</h3>
+      <button onclick="addToCart('Fish Pie', 600, 'images/fishpie.jpg')" class="button">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="images/puff-puff.jpg">
+      <h3>Puff Puff</h3>
+      <button onclick="addToCart('Puff Puff', 100, 'images/puff-puff.jpg')" class="button">Add</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="grid">
+    <div class="card">
+      <img src="images/Saved Pictures/small-chops1.jpeg">
+      <h3>Small Chops</h3>
+      <button onclick="addToCart('Small Chops', 4000, 'images/Saved Pictures/small-chops1.jpeg')" class="button">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="images/Saved Pictures/doughnut3.jpeg">
+      <h3>Doughnuts</h3>
+      <button onclick="addToCart('Doughnuts', 800, 'images/Saved Pictures/doughnut3.jpeg')" class="button">Add</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
