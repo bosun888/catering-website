@@ -43,7 +43,8 @@ function checkLogin() {
    CART SYSTEM
 ========================= */
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cart = JSON.parse(localStorage.getItem("cart")) ?? [];
+
 
 function addToCart(name, price, image) {
   if (!checkLogin()) return;
